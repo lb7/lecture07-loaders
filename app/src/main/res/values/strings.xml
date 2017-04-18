@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descriptionButtonSearch">Search Button</string>
+    <string name="descriptionSearchBox">Search Box</string>
+    <string name="descriptionClearSearch">Clear Search</string>
+    <string name="descriptionMoviePoster">Movie Poster</string>
 </resources>

@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_search"
+        android:contentDescription="@string/descriptionButtonSearch"
         />
     <EditText
         android:id="@+id/txtMovieSearch"
@@ -18,14 +19,22 @@
         android:hint="Movie title..."
         android:layout_centerHorizontal="true"
         android:layout_toRightOf="@id/btnMovieSearch"
+        android:layout_toEndOf="@id/btnMovieSearch"
         android:layout_toLeftOf="@+id/btnClearSearch"
-        />
+        android:layout_toStartOf="@id/btnClearSearch"
+        android:nextFocusDown="@id/btnMovieSearch"
+        android:nextFocusUp="@id/btnClearSearch"
+        >
+        <requestFocus/>
+        </EditText>
     <ImageButton
         android:id="@+id/btnClearSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_menu_close_clear_cancel"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/descriptionClearSearch"
         />
 
     <TextView
@@ -43,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/txtMovie"
+        android:contentDescription="@string/descriptionMoviePoster"
         />
     
 </RelativeLayout>
